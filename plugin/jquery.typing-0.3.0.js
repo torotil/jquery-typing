@@ -87,7 +87,6 @@
 	$(document).on('focus.typing.data-api', '[data-provide=typing]', function (e) {
 		var $this = $(this),
 		delay = $this.data('typingDelay');
-		console.log(delay);
 		$this.typing( {
 			delay: delay
 		});
