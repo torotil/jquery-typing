@@ -1,10 +1,17 @@
-jQuery-typing
+jQuery-typing with events and data-api support
 =============
 
-Assign callbacks for started/stopped typing events.
+Assign callbacks for started/stopped typing events. This version supports events and data-api and is backwards compatible with original version by narf.
 
 
-Usage
+Usage (events automatically attached just-in-time based on the data API - bootstrap style)
+-----
+
+  <input data-provide="typing" data-typing-delay="400" />
+  $(body).bind('typing:start', ':input', function(event) { $(this).css('background', '#fa0'); });
+  $(body).bind('typing:start', ':input', function(event) { $(this).css('background', '#f00'); });
+
+Alternative Usage 
 -----
 
     $(':text').typing({
@@ -16,6 +23,7 @@ Usage
         },
         delay: 400
     });
+
 
 `typing` command takes key-value object with `start`, `stop` and
 `delay` keys. They are all optional, so you can either pass only

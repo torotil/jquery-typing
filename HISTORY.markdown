@@ -5,7 +5,7 @@ jQuery-typing history
 This file only covers changes important for the end-user.  Visit GitHub
 for [full history][].
 
-  [full history]: http://github.com/narfdotpl/jquery-typing/commits/master
+  [full history]: http://github.com/tnajdek/jquery-typing/commits/master
 
 [v0.3][]
 
@@ -27,6 +27,6 @@ for [full history][].
 
   - Initial release.
 
-
+  [v0.3]: http://github.com/tnajdek/jquery-typing/compare/v0.2.0...v0.3.0
   [v0.2]: http://github.com/narfdotpl/jquery-typing/compare/v0.1.0...v0.2.0
   [v0.1]: http://github.com/narfdotpl/jquery-typing/compare/c4b8c10...v0.1.0
