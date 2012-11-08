@@ -8,6 +8,7 @@ for [full history][].
   [full history]: http://github.com/tnajdek/jquery-typing/commits/master
 
 [v0.3][]
+--------
 
   - Added support for data-api.
 
