@@ -1,11 +1,17 @@
 jQuery-typing history
 =====================
 
+
 This file only covers changes important for the end-user.  Visit GitHub
 for [full history][].
 
   [full history]: http://github.com/narfdotpl/jquery-typing/commits/master
 
+[v0.3][]
+
+  - Added support for data-api.
+
+  - Added events triggering
 
 [v0.2][]
 --------
