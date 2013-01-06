@@ -14,7 +14,13 @@
 
 	$.fn.typing = function (options) {
 		return this.each(function (i, elem) {
-			listenToTyping(elem, options);
+			var	$elem = $(elem),
+				api;
+			
+			if(!$elem.data('typing')) {
+				api = new Typing(elem, options);
+				$elem.data('typing', api);
+			}
 		});
 	};
 
@@ -23,18 +29,21 @@
 	//  actual function
 	//-------------------
 
-	function listenToTyping(elem, options) {
-		// override default settings
-		var settings = $.extend({
-			start: null,
-			stop: null,
-			delay: 400
-		}, options);
-
+	var Typing = function(elem, options) {
 		// create other function-scope variables
 		var $elem = $(elem),
 			typing = false,
-			delayedCallback;
+			delayedCallback,
+		// override default settings
+			settings = $.extend({
+				start: null,
+				stop: null,
+				delay: 400
+			}, options);
+
+		//export settings to the api
+		this.settings = settings;
+	
 
 		// start typing
 		function startTyping(event) {
@@ -81,7 +90,7 @@
 		$elem.blur(function (event) {
 			stopTyping(event, 0);
 		});
-	}
+	};
 
 	//provide data-api bootstrap style (http://rc.getbootstrap.com/javascript.html)
 	$(document).on('focus.typing.data-api', '[data-provide=typing]', function (e) {
