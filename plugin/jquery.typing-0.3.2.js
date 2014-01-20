@@ -1,10 +1,10 @@
 // jQuery-typing
 //
-// Version: 0.3.0
-// Website: http://narf.pl/jquery-typing/
+// Version: 0.3.2
+// Website: http://tnajdek.github.io/jquery-typing/
 // License: public domain <http://unlicense.org/>
 // Author:  Maciej Konieczny <hello@narf.pl>
-// Events & data-api: Tom Najdek <tom@doppnet.com>
+// Author (Events & data-api): Tom Najdek <tom@doppnet.com>
 
 (function ($) {
 

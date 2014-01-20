@@ -7,10 +7,15 @@ for [full history][].
 
   [full history]: http://github.com/tnajdek/jquery-typing/commits/master
 
+[v0.3.2][]
+--------
+
+  - Fixed bug where event listener would be attached multiple times
+
+  - Updated & published demo
+
 [v0.3.1][]
 --------
-  
-  - Fixed bug where event listener would be attached multiple times
 
   - Settings can be changed dynamically via api after typing has been attached to a DOM element
 
@@ -35,6 +40,7 @@ for [full history][].
 
   - Initial release.
 
+  [v0.3.1]: http://github.com/tnajdek/jquery-typing/compare/v0.3.1...v0.3.2
   [v0.3.1]: http://github.com/tnajdek/jquery-typing/compare/v0.3.0...v0.3.1
   [v0.3]: http://github.com/tnajdek/jquery-typing/compare/v0.2.0...v0.3.0
   [v0.2]: http://github.com/narfdotpl/jquery-typing/compare/v0.1.0...v0.2.0
