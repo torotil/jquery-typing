@@ -45,7 +45,7 @@ callbacks.
 Demo
 ----
 
-Visit <http://narf.pl/jquery-typing/>
+Visit <http://tnajdek.github.io/jquery-typing/>
 
 
 Download
