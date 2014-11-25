@@ -6,7 +6,11 @@
 // Author:  Maciej Konieczny <hello@narf.pl>
 // Author (Events & data-api): Tom Najdek <tom@doppnet.com>
 
-(function ($) {
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define('jquery-typing', ['jquery'], factory);
+  } else factory(root.jQuery);
+}(this, function($) {
 
 	//--------------------
 	//  jQuery extension
@@ -101,4 +105,4 @@
 		});
 	});
 
-})(jQuery);
+}));
